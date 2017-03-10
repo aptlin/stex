@@ -2,12 +2,18 @@
 
 %%%% Environment %%%%
 
-%%% mathematics
+%%%mathematics
 % general
 \usepackage{mathtools}
 \usepackage{amssymb, nccmath}
 \usepackage{commath}
 \usepackage{amsthm}
+\usepackage{units}
+\usepackage{flagderiv}
+\usepackage{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+
 % logic
 \usepackage{lplfitch}
 
@@ -43,6 +49,7 @@
 %% mathematics
 % environments
 \newenvironment{soln}{\begin{proof}[Solution]}{\end{proof}}
+\newenvironment{hint}{\begin{proof}[Hint]}{\end{proof}}
 \newenvironment{parlist}{\begin{inparaenum}[(i)]}{\end{inparaenum}}
 \newenvironment{gobble}{\setbox\z@\vbox\bgroup}{\egroup}
 
@@ -54,7 +61,9 @@
 
 % From H113 "Introduction to Abstract Algebra" at UC Berkeley
 \newcommand{\CC}{\mathbb C}
+\newcommand{\EE}{\mathbb E}
 \newcommand{\FF}{\mathbb F}
+\newcommand{\GG}{\mathbb G}
 \newcommand{\HH}{\mathbb H}
 \newcommand{\NN}{\mathbb N}
 \newcommand{\PP}{\mathbb P}
@@ -81,6 +90,7 @@
 \DeclareMathOperator*{\argmax}{arg max}
 \newcommand{\opname}{\operatorname}
 \newcommand{\surjto}{\twoheadrightarrow}
+\newcommand{\ras}{\rightsquigarrow}
 \newcommand{\injto}{\hookrightarrow}
 \newcommand{\On}{\mathrm{On}} % ordinals
 \DeclareMathOperator{\diam}{diam}
@@ -102,6 +112,8 @@
 \DeclareMathOperator{\Hom}{Hom} % homomorphism
 \DeclareMathOperator{\End}{End} % endomorphism
 
+% Hyperbolic Functions
+\DeclareMathOperator{\sech}{sech} 
 % Things Lie
 \newcommand{\kb}{\mathfrak b}
 \newcommand{\kg}{\mathfrak g}
@@ -120,9 +132,9 @@
 \newcommand{\LL}{\mathfrak L}
 \newcommand{\SM}{\mathfrak M}
 \newcommand{\MM}{\mathcal M}
-\newcommand{\SN}{\mathfrak N}
+\newcommand{\SN}{\mathcal N}
 \newcommand{\OO}{\mathcal O}
-\newcommand{\SP}{\mathfrak P}
+\newcommand{\SP}{\mathcal P}
 \newcommand{\ze}{\mathfrak 0}
 \DeclareMathOperator{\Ext}{Ext} % Ext functor
 \DeclareMathOperator{\Tor}{Tor} % Tor functor
@@ -178,6 +190,7 @@
 % Andrew Swann et al
 % https://tex.stackexchange.com/questions/309026/how-to-define-an-inner-product-argument-in-latex
 \DeclarePairedDelimiterX{\ipr}[2]{\langle}{\rangle}{#1, #2}
+\DeclarePairedDelimiterX{\irp}[2]{\rangle}{\langle}{#1, #2}
 % https://tex.stackexchange.com/questions/209863/how-to-add-mathematical-notation-of-a-set
 
 \DeclarePairedDelimiterX{\Set}[1]{\{}{\}}{\setargs{#1}}
@@ -232,6 +245,7 @@
 \newcommand{\vocab}[1]{\textbf{\color{blue} #1}}
 
 % snippets
+\def\Th{\text{th}}
 \def\defi{Definition of }
 \def\mclo{Multiplicative Closure of }
 \def\aclo{Additive Closure of }
