@@ -8,11 +8,15 @@
 \usepackage{amssymb, nccmath}
 \usepackage{commath}
 \usepackage{amsthm}
+
+
+
 \usepackage{units}
 \usepackage{flagderiv}
 \usepackage{adjustbox}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
+
 
 % logic
 \usepackage{lplfitch}
@@ -25,6 +29,12 @@
 \usepackage[nameinlink]{cleveref}
 \usepackage{datetime}
 \usepackage{graphicx}
+% tikz
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usetikzlibrary{shapes,arrows}
+\usepackage{dot2texi}
 % building commands
 \usepackage{xparse}
 % bibliography
@@ -82,6 +92,7 @@
 \DeclareMathOperator{\Inn}{Inn}
 \DeclareMathOperator{\Syl}{Syl}
 \DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Cl}{Cl} % Class group
 \DeclareMathOperator{\GL}{GL} % General linear group
 \DeclareMathOperator{\SL}{SL} % Special linear group
 \DeclareMathOperator{\cis}{cis}
@@ -104,6 +115,7 @@
 \DeclareMathOperator{\nll}{nullity} %nullity
 \DeclareMathOperator{\Spec}{Spec} % spectrum
 \DeclareMathOperator{\Tr}{tr} % trace
+\DeclareMathOperator{\rad}{rad} % radius
 \DeclareMathOperator{\pr}{pr} % projection
 \DeclareMathOperator{\ext}{ext} % extension
 \DeclareMathOperator{\pred}{pred} % predecessor
@@ -124,7 +136,7 @@
 \newcommand{\SA}{\mathfrak A}
 \newcommand{\SB}{\mathfrak B}
 \newcommand{\SC}{\mathfrak C}
-\newcommand{\SD}{\mathfrak D}
+\newcommand{\SD}{\mathcal D}
 \newcommand{\SE}{\mathfrak E}
 \newcommand{\SF}{\mathcal F}
 \newcommand{\SG}{\mathfrak G}
@@ -136,8 +148,10 @@
 \newcommand{\OO}{\mathcal O}
 \newcommand{\SP}{\mathcal P}
 \newcommand{\ze}{\mathfrak 0}
+\newcommand{\mm}{\mathfrak m}
 \DeclareMathOperator{\Ext}{Ext} % Ext functor
 \DeclareMathOperator{\Tor}{Tor} % Tor functor
+\DeclareMathOperator{\Disc}{Disc} % Discriminant
 \newcommand{\gl}{\opname{\mathfrak{gl}}} % frak gl group
 \renewcommand{\sl}{\opname{\mathfrak{sl}}} % frak gl group
 \def\bc{\because}
