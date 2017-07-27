@@ -3,12 +3,12 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("cleveref" "nameinlink")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "mathtools"
@@ -65,6 +65,7 @@
     "symsum"
     "cycprod"
     "symprod"
+    "BB"
     "CC"
     "EE"
     "FF"
@@ -75,34 +76,36 @@
     "QQ"
     "RR"
     "ZZ"
-    "charin"
+    "Gb"
+    "Gg"
+    "Gh"
+    "Gm"
+    "Gn"
+    "Gu"
+    "Gz"
+    "GA"
+    "GB"
+    "GC"
+    "GE"
+    "GH"
+    "GL"
+    "GM"
+    "Gzero"
+    "SD"
+    "SF"
+    "SH"
+    "SK"
+    "SL"
+    "SM"
+    "SN"
+    "SO"
+    "SP"
+    "SR"
     "opname"
     "surjto"
     "ras"
     "injto"
     "On"
-    "kb"
-    "kg"
-    "kh"
-    "kn"
-    "ku"
-    "kz"
-    "SA"
-    "SB"
-    "SC"
-    "SD"
-    "SE"
-    "SF"
-    "SG"
-    "SH"
-    "LL"
-    "SM"
-    "MM"
-    "SN"
-    "OO"
-    "SP"
-    "ze"
-    "mm"
     "gl"
     "dang"
     "id"
@@ -170,7 +173,6 @@
     '("irp" "2")
     '("Set" "1"))
    (LaTeX-add-xcolor-definecolors
-    "blue"
     "PalyGreen"
     "PalyGrey"))
  :latex)

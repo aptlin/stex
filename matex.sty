@@ -9,14 +9,11 @@
 \usepackage{commath}
 \usepackage{amsthm}
 
-
-
 \usepackage{units}
 \usepackage{flagderiv}
 \usepackage{adjustbox}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
-
 
 % logic
 \usepackage{lplfitch}
@@ -63,14 +60,15 @@
 \newenvironment{parlist}{\begin{inparaenum}[(i)]}{\end{inparaenum}}
 \newenvironment{gobble}{\setbox\z@\vbox\bgroup}{\egroup}
 
-% Inequalities
+% inequalities
 \newcommand{\cycsum}{\sum_{\mathrm{cyc}}}
 \newcommand{\symsum}{\sum_{\mathrm{sym}}}
 \newcommand{\cycprod}{\prod_{\mathrm{cyc}}}
 \newcommand{\symprod}{\prod_{\mathrm{sym}}}
 
-% From H113 "Introduction to Abstract Algebra" at UC Berkeley
-\renewcommand{\AA}{\mathbb A}
+% math blackboard
+
+\newcommand{\BB}{\mathbb B}
 \newcommand{\CC}{\mathbb C}
 \newcommand{\EE}{\mathbb E}
 \newcommand{\FF}{\mathbb F}
@@ -82,12 +80,42 @@
 \newcommand{\RR}{\mathbb R}
 \newcommand{\ZZ}{\mathbb Z}
 
+% gothic
+\newcommand{\Gb}{\mathfrak b}
+\newcommand{\Gg}{\mathfrak g}
+\newcommand{\Gh}{\mathfrak h}
+\newcommand{\Gm}{\mathfrak m}
+\newcommand{\Gn}{\mathfrak n}
+\newcommand{\Gu}{\mathfrak u}
+\newcommand{\Gz}{\mathfrak z}
+
+\newcommand{\GA}{\mathfrak A}
+\newcommand{\GB}{\mathfrak B}
+\newcommand{\GC}{\mathfrak C}
+\newcommand{\GE}{\mathfrak E}
+\newcommand{\GG}{\mathfrak G}
+\newcommand{\GH}{\mathfrak H}
+\newcommand{\GL}{\mathfrak L}
+\newcommand{\GM}{\mathfrak M}
+\newcommand{\Gzero}{\mathfrak 0}
+
+% calligraphic
+\newcommand{\SD}{\mathcal D}
+\newcommand{\SF}{\mathcal F}
+\newcommand{\SH}{\mathcal H}
+\newcommand{\SK}{\mathcal K}
+\newcommand{\SL}{\mathcal L}
+\newcommand{\SM}{\mathcal M}
+\newcommand{\SN}{\mathcal N}
+\newcommand{\SO}{\mathcal O}
+\newcommand{\SP}{\mathcal P}
+\newcommand{\SR}{\mathcal R}
+
 % general
 \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
 \DeclareMathOperator{\spn}{span}
-\newcommand{\charin}{\text{ char }}
 \DeclareMathOperator{\ch}{char}
 \DeclareMathOperator{\sign}{sign}
 \DeclareMathOperator{\Aut}{Aut}
@@ -129,34 +157,6 @@
 % Hyperbolic Functions
 \DeclareMathOperator{\sech}{sech} 
 % Things Lie
-\newcommand{\kb}{\mathfrak b}
-\newcommand{\kg}{\mathfrak g}
-\newcommand{\kh}{\mathfrak h}
-\newcommand{\kn}{\mathfrak n}
-\newcommand{\ku}{\mathfrak u}
-\newcommand{\kz}{\mathfrak z}
-\newcommand{\SA}{\mathfrak A}
-\newcommand{\BB}{\mathbb B}
-\newcommand{\SB}{\mathfrak B}
-\newcommand{\SC}{\mathfrak C}
-\newcommand{\SD}{\mathcal D}
-\newcommand{\SE}{\mathfrak E}
-\newcommand{\SF}{\mathcal F}
-\newcommand{\SG}{\mathfrak G}
-\newcommand{\GH}{\mathfrak H}
-\newcommand{\CH}{\mathcal H}
-\newcommand{\CK}{\mathcal K}
-\newcommand{\LL}{\mathfrak L}
-\newcommand{\CL}{\mathcal L}
-\newcommand{\GM}{\mathfrak M}
-\newcommand{\Gm}{\mathfrak m}
-\newcommand{\MM}{\mathcal M}
-\newcommand{\SN}{\mathcal N}
-\newcommand{\OO}{\mathcal O}
-\newcommand{\SP}{\mathcal P}
-\newcommand{\CR}{\mathcal R}
-\newcommand{\Gzero}{\mathfrak 0}
-
 \DeclareMathOperator{\Ext}{Ext} % Ext functor
 \DeclareMathOperator{\Tor}{Tor} % Tor functor
 \DeclareMathOperator{\Div}{Div} % Div
