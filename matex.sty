@@ -70,6 +70,7 @@
 \newcommand{\symprod}{\prod_{\mathrm{sym}}}
 
 % From H113 "Introduction to Abstract Algebra" at UC Berkeley
+\renewcommand{\AA}{\mathbb A}
 \newcommand{\CC}{\mathbb C}
 \newcommand{\EE}{\mathbb E}
 \newcommand{\FF}{\mathbb F}
@@ -87,6 +88,7 @@
 \newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
 \DeclareMathOperator{\spn}{span}
 \newcommand{\charin}{\text{ char }}
+\DeclareMathOperator{\ch}{char}
 \DeclareMathOperator{\sign}{sign}
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\Inn}{Inn}
@@ -114,7 +116,7 @@
 \DeclareMathOperator{\rank}{rank} % rank
 \DeclareMathOperator{\nll}{nullity} %nullity
 \DeclareMathOperator{\Spec}{Spec} % spectrum
-\DeclareMathOperator{\Tr}{tr} % trace
+\DeclareMathOperator{\tr}{tr} % trace
 \DeclareMathOperator{\rad}{rad} % radius
 \DeclareMathOperator{\pr}{pr} % projection
 \DeclareMathOperator{\ext}{ext} % extension
@@ -123,7 +125,7 @@
 \DeclareMathOperator{\ran}{range} % range
 \DeclareMathOperator{\Hom}{Hom} % homomorphism
 \DeclareMathOperator{\End}{End} % endomorphism
-
+\DeclareMathOperator{\perm}{perm}
 % Hyperbolic Functions
 \DeclareMathOperator{\sech}{sech} 
 % Things Lie
@@ -134,23 +136,30 @@
 \newcommand{\ku}{\mathfrak u}
 \newcommand{\kz}{\mathfrak z}
 \newcommand{\SA}{\mathfrak A}
+\newcommand{\BB}{\mathbb B}
 \newcommand{\SB}{\mathfrak B}
 \newcommand{\SC}{\mathfrak C}
 \newcommand{\SD}{\mathcal D}
 \newcommand{\SE}{\mathfrak E}
 \newcommand{\SF}{\mathcal F}
 \newcommand{\SG}{\mathfrak G}
-\newcommand{\SH}{\mathfrak H}
+\newcommand{\GH}{\mathfrak H}
+\newcommand{\CH}{\mathcal H}
+\newcommand{\CK}{\mathcal K}
 \newcommand{\LL}{\mathfrak L}
-\newcommand{\SM}{\mathfrak M}
+\newcommand{\CL}{\mathcal L}
+\newcommand{\GM}{\mathfrak M}
+\newcommand{\Gm}{\mathfrak m}
 \newcommand{\MM}{\mathcal M}
 \newcommand{\SN}{\mathcal N}
 \newcommand{\OO}{\mathcal O}
 \newcommand{\SP}{\mathcal P}
-\newcommand{\ze}{\mathfrak 0}
-\newcommand{\mm}{\mathfrak m}
+\newcommand{\CR}{\mathcal R}
+\newcommand{\Gzero}{\mathfrak 0}
+
 \DeclareMathOperator{\Ext}{Ext} % Ext functor
 \DeclareMathOperator{\Tor}{Tor} % Tor functor
+\DeclareMathOperator{\Div}{Div} % Div
 \DeclareMathOperator{\Disc}{Disc} % Discriminant
 \newcommand{\gl}{\opname{\mathfrak{gl}}} % frak gl group
 \renewcommand{\sl}{\opname{\mathfrak{sl}}} % frak gl group
@@ -257,6 +266,9 @@
 \newcommand{\ex}[3]{#1: Chapter #2 | Section #3}
 \newcommand{\nt}[3]{#1: Lecture #2 | #3}
 \newcommand{\vocab}[1]{\textbf{\color{blue} #1}}
+%
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
 
 % snippets
 \def\Th{\text{th}}
